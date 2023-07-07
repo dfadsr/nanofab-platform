@@ -1,0 +1,43 @@
+v {xschem version=3.4.0 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -130 -70 130 -70 {}
+L 4 -130 70 130 70 {}
+L 4 -130 -70 -130 70 {}
+L 4 130 -70 130 70 {}
+L 4 -40 -90 -40 -70 {}
+L 4 0 70 0 90 {}
+L 4 -40 70 -40 90 {}
+L 4 -150 0 -130 0 {}
+L 4 -150 -60 -130 -60 {}
+L 4 20 70 20 90 {}
+L 4 -150 60 -130 60 {}
+L 7 130 0 150 0 {}
+L 7 0 -90 0 -70 {}
+B 5 -42.5 -92.5 -37.5 -87.5 {name=vcc_io dir=in}
+B 5 147.5 -2.5 152.5 2.5 {name=vssd dir=inout}
+B 5 -2.5 -92.5 2.5 -87.5 {name=pad dir=inout}
+B 5 -2.5 87.5 2.5 92.5 {name=vgnd_io dir=in}
+B 5 -42.5 87.5 -37.5 92.5 {name=tie_lo_esd dir=in}
+B 5 -152.5 -2.5 -147.5 2.5 {name=pd_h<3:2> dir=in}
+B 5 -152.5 -62.5 -147.5 -57.5 {name=force_io_h dir=in}
+B 5 17.5 87.5 22.5 92.5 {name=vssio_amx dir=in}
+B 5 -152.5 57.5 -147.5 62.5 {name=force_lovol_h dir=in}
+T {@symname} -76.5 -6 0 0 0.3 0.3 {}
+T {@name} 135 -82 0 0 0.2 0.2 {}
+T {vcc_io} -35 -64 1 0 0.2 0.2 {}
+T {vssd} 125 -4 0 1 0.2 0.2 {}
+T {pad} -5 -64 3 1 0.2 0.2 {}
+T {vgnd_io} -5 66 3 0 0.2 0.2 {}
+T {tie_lo_esd} -35 16 1 0 0.2 0.2 {}
+T {pd_h<3:2>} -125 -4 0 0 0.2 0.2 {}
+T {force_io_h} -125 -64 0 0 0.2 0.2 {}
+T {vssio_amx} 15 66 3 0 0.2 0.2 {}
+T {force_lovol_h} -125 56 0 0 0.2 0.2 {}
